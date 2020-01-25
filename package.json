@@ -1,0 +1,16 @@
+{
+	"name": "gremilin-website",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "sass --watch src/scss/main.scss:src/css/main.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {},
+	"dependencies": {
+		"sass": "^1.25.1-test.1"
+	}
+}
