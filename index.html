@@ -2,9 +2,9 @@
 <html class="no-js" lang="">
 	<head>
 		<meta charset="utf-8" />
-		<title>Hello world</title>
+		<title>Gremilin</title>
 		<link rel="stylesheet" href="src/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />		<script src="src/javascript/index.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />		
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -76,68 +76,41 @@
                     <h2>Commands</h2>
                 </div>
                 <div class="search">
-                    <input class="box" placeholder="Search for a command"></input>
+                    <input id='search-command' class="box" placeholder="Search for a command"></input>
                 </div>
-                <div class="commands-cards">
-                    <div class="card">
-                        <div class="head d-flex  align-items-center">
-                            <div class="avatar">
-                                <img src="./src/images/gremilin.jpg" alt="">
-                            </div>
-                            <div class="command">
-                                <span>?profile</span>
-                            </div>
-
-                        </div>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veniam laborum atque magnam quo mollitia doloremque blanditiis, dolor voluptatem explicabo.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="head d-flex  align-items-center">
-                            <div class="avatar">
-                                <img src="./src/images/gremilin.jpg" alt="">
-                            </div>
-                            <div class="command">
-                                <span>?profile</span>
-                            </div>
-
-                        </div>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veniam laborum atque magnam quo mollitia doloremque blanditiis, dolor voluptatem explicabo.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="head d-flex  align-items-center">
-                            <div class="avatar">
-                                <img src="./src/images/gremilin.jpg" alt="">
-                            </div>
-                            <div class="command">
-                                <span>?profile</span>
-                            </div>
-
-                        </div>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veniam laborum atque magnam quo mollitia doloremque blanditiis, dolor voluptatem explicabo.</p>
-                        </div>
-                    </div>
+                <div  id='commands-container' class="commands-cards">
                 </div>
 
 			</div>
 		</div>
+		<div class="container">
+			<h2 style="color:#fff;font-weight:600">Join Our Discord server</h2>
+		</div>
 		<div class="discord">
-				<button class='button'>Join our discord</button>
+				<button class='button'>Join Now</button>
 			<div class="bg">
 				<div class="overlay"></div>
 				<img src="./src/images/join.png" alt="">
 			</div>
 
 		</div>
+		<div class="footer">
+			<div class="container">
+				<div >
+					<span>All rights reserved. Website and bot <br> were made with <i class='fas fa-heart'></i> by Everkers.</span>
+				</div>
+				<div style="margin-left: auto;">
+					<span>everkerss@gmail.com</span><br>
+					<span>Everkers#6416</span>
+				</div>
+			</div>
+		</div>
 		<script
 		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"
-	></script>
+		></script>
+		<script src="src/javascript/index.js"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

@@ -78,7 +78,7 @@ nav {
 			margin-right: 3.5em;
 			margin-bottom: 3.5em;
 			background-color: $second;
-			width: 18em;
+			width: 20em;
 			height: 13em;
 			color: #fff;
 			.content {
@@ -141,7 +141,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	margin-top: 2em;
 	.button {
 		position: absolute;
 		z-index: 1;
@@ -162,6 +162,23 @@ nav {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+		}
+	}
+}
+.footer {
+	margin-top: 8em;
+	background-color: $second;
+	width: 100%;
+	height: 12em;
+	color: #fff;
+	.container {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		div:last-child {
+			span:first-child {
+				font-weight: 600;
+			}
 		}
 	}
 }
