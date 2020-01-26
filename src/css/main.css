@@ -27,16 +27,31 @@ nav #navbarSupportedContent div {
   color: #fff;
 }
 nav #navbarSupportedContent div ul li {
+  cursor: pointer;
+  color: #616060;
   margin: 0.8em 1.5em;
   font-size: 14px;
+  transition: color ease 500ms;
+}
+nav #navbarSupportedContent div ul li button {
+  margin-top: -2em;
+}
+nav #navbarSupportedContent div ul li:hover {
+  color: #fff;
 }
 
 .header {
   width: 100%;
 }
 .header .left_box {
-  height: 100vh;
   padding-top: 9em;
+  margin-bottom: 7em;
+}
+@media screen and (max-width: 985px) {
+  .header .left_box {
+    order: 2;
+    text-align: center;
+  }
 }
 .header .left_box h1 {
   color: #fff;
@@ -48,18 +63,32 @@ nav #navbarSupportedContent div ul li {
 .header .left_box p {
   color: #68696a;
 }
-.header .right_box {
-  padding-top: 2em;
-  position: relative;
+@media screen and (max-width: 985px) {
+  .header .right_box {
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
+    order: 1;
+    width: 100%;
+  }
 }
 .header .right_box img {
-  position: absolute;
-  right: -40%;
-  width: 40em;
+  width: 24em;
+}
+@media screen and (min-width: 991px) {
+  .header .right_box {
+    padding-top: 2em;
+    position: relative;
+  }
+  .header .right_box img {
+    position: absolute;
+    right: -40%;
+    width: 40em;
+  }
 }
 
 .commands {
-  height: 100vh;
+  margin: 8em 0;
 }
 .commands .head h2 {
   color: #fff;
@@ -73,7 +102,7 @@ nav #navbarSupportedContent div ul li {
   margin-right: 3.5em;
   margin-bottom: 3.5em;
   background-color: #212123;
-  width: 23em;
+  width: 18em;
   height: 13em;
   color: #fff;
 }
@@ -124,6 +153,37 @@ nav #navbarSupportedContent div ul li {
   border: 0;
   border-radius: 0.5em;
   padding: 0 2em;
+}
+
+.discord {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discord .button {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+}
+.discord .overlay {
+  background-color: rgba(0, 0, 0, 0.534);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.discord .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.discord .bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

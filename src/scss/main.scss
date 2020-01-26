@@ -5,8 +5,17 @@ nav {
 		div {
 			color: #fff;
 			ul li {
+				button {
+					margin-top: -2em;
+				}
+				cursor: pointer;
+				color: rgb(97, 96, 96);
 				margin: 0.8em 1.5em;
 				font-size: 14px;
+				transition: color ease 500ms;
+				&:hover {
+					color: #fff;
+				}
 			}
 		}
 	}
@@ -14,8 +23,12 @@ nav {
 .header {
 	width: 100%;
 	.left_box {
-		height: 100vh;
+		@media screen and (max-width: 985px) {
+			order: 2;
+			text-align: center;
+		}
 		padding-top: 9em;
+		margin-bottom: 7em;
 		h1 {
 			color: #fff;
 			font-weight: 600;
@@ -28,17 +41,29 @@ nav {
 		}
 	}
 	.right_box {
-		padding-top: 2em;
-		position: relative;
+		@media screen and (max-width: 985px) {
+			margin-top: 8em;
+			display: flex;
+			justify-content: center;
+			order: 1;
+			width: 100%;
+		}
 		img {
-			position: absolute;
-			right: -40%;
-			width: 40em;
+			width: 24em;
+		}
+		@media screen and (min-width: 991px) {
+			padding-top: 2em;
+			position: relative;
+			img {
+				position: absolute;
+				right: -40%;
+				width: 40em;
+			}
 		}
 	}
 }
 .commands {
-	height: 100vh;
+	margin: 8em 0;
 	.head {
 		h2 {
 			color: #fff;
@@ -53,7 +78,7 @@ nav {
 			margin-right: 3.5em;
 			margin-bottom: 3.5em;
 			background-color: $second;
-			width: 23em;
+			width: 18em;
 			height: 13em;
 			color: #fff;
 			.content {
@@ -106,6 +131,37 @@ nav {
 			border: 0;
 			border-radius: 0.5em;
 			padding: 0 2em;
+		}
+	}
+}
+.discord {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.button {
+		position: absolute;
+		z-index: 1;
+		opacity: 1;
+	}
+	.overlay {
+		background-color: rgba(0, 0, 0, 0.534);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+	.bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }
