@@ -27,6 +27,32 @@ button.button:hover {
   opacity: 1;
 }
 
+.video-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.582);
+  z-index: 4;
+}
+.video-container button.button {
+  margin-top: 1.1em;
+}
+.video-container .video {
+  width: 48em;
+  height: 28em;
+  border-radius: 0.3em;
+  background-color: #fff;
+  overflow: hidden;
+}
+.video-container .video iframe {
+  width: 100%;
+  height: 100%;
+}
+
 nav #navbarSupportedContent div {
   color: #fff;
 }

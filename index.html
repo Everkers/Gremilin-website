@@ -14,6 +14,12 @@
 	</head>
 
 	<body>
+		<div class="video-container d-none">
+			<div class="video">
+				<iframe id='video-iframe' src="https://www.youtube.com/embed/e7O1EHRi3q4?vq=hd1080&showinfo=0&rel=0&fs=0&color=white&controls=0&disablekb=1"  frameborder="0"></iframe>
+			</div>
+			<button id='close-video' class='button'>Close Video</button>
+		</div>
 		<nav class="navbar navbar-expand-lg ">
 			<div class="container">
 				<a
@@ -46,7 +52,7 @@
 								<a href="#commands">Commands</a>
 							</li>
 							<li class="nav-item">
-								<button class="button">Invite</button>
+								<a href="https://discordapp.com/oauth2/authorize?client_id=628226371495133204&scope=bot&permissions=314368" target="_blank"><button class="button">Invite</button></a>
 							</li>
 						</ul>
 					</div>
@@ -60,7 +66,7 @@
 					<p>
 						Gremilin is a discord bot for league of legends player that provides you with some useful information about your account and some other features
 					</p>
-					<button class="button">
+					<button id='watch-video' class="button">
 						Watch Video
 					</button>
 				</div>

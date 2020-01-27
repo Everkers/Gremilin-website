@@ -47,6 +47,23 @@ const commands = [
 ]
 const search = document.querySelector('#search-command')
 let timer = null
+const buttonVideo = document.querySelector('#watch-video')
+const buttonClose = document.querySelector('#close-video')
+const videoContainer = document.querySelector('.video-container')
+buttonClose.addEventListener('click', () => {
+	const iframe = document.querySelector('#video-iframe')
+	iframe.src =
+		'https://www.youtube.com/embed/e7O1EHRi3q4?vq=hd1080&showinfo=0&rel=0&fs=0&color=white&controls=0&disablekb=1'
+	videoContainer.classList.remove('d-flex')
+})
+buttonVideo.addEventListener('click', () => {
+	const width = window.innerWidth
+	if (width < 700) {
+		window.open('https://youtu.be/e7O1EHRi3q4', '_blank')
+	} else {
+		videoContainer.classList.add('d-flex')
+	}
+})
 search.onkeydown = elm => {
 	clearTimeout(timer)
 	$('#commands-container').empty()
