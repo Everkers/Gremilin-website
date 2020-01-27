@@ -6,6 +6,9 @@ body {
 	font-family: 'Montserrat', sans-serif !important;
 	overflow-x: hidden;
 }
+html {
+	scroll-behavior: smooth;
+}
 button.button {
 	background-color: $buttons;
 	color: #fff;

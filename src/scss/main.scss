@@ -8,6 +8,10 @@ nav {
 				button {
 					margin-top: -2em;
 				}
+				a {
+					text-decoration: none;
+					color: inherit;
+				}
 				cursor: pointer;
 				color: rgb(97, 96, 96);
 				margin: 0.8em 1.5em;
@@ -78,7 +82,7 @@ nav {
 			margin-right: 3.5em;
 			margin-bottom: 3.5em;
 			background-color: $second;
-			width: 20em;
+			width: 28em;
 			height: 13em;
 			color: #fff;
 			.content {
@@ -174,8 +178,14 @@ nav {
 	.container {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
 		height: 100%;
 		div:last-child {
+			@media screen and (max-width: 511px) {
+				margin: 0 !important;
+			}
 			span:first-child {
 				font-weight: 600;
 			}

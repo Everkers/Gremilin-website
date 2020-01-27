@@ -52,34 +52,34 @@ search.onkeydown = elm => {
 	$('#commands-container').empty()
 	timer = setTimeout(() => {
 		const value = elm.target.value
-		commands.forEach(command => {
-			const { name, content } = command
-			const valg = new RegExp(value, 'gi')
-			console.log(value.length)
-			if (value.length <= 1) {
-				$('#commands-container').empty()
-				setAllCards()
-			}
-			if (content.match(valg) || name.match(valg)) {
-				const template = `
-                <div class="card">
-                <div class="head d-flex  align-items-center">
-                    <div class="avatar">
-                        <img src="./src/images/gremilin.jpg" alt="">
-                    </div>
-                    <div class="command">
-                        <span>${command.name}</span>
-                    </div>
-            
-                </div>
-                <div class="content">
-                    <p>${command.content}</p>
-                </div>
-            </div>
-                `
-				$('#commands-container').append(template)
-			}
-		})
+		if (value.length <= 1) {
+			$('#commands-container').empty()
+			setAllCards()
+		} else {
+			commands.forEach(command => {
+				const { name, content } = command
+				const valg = new RegExp(value, 'gi')
+				if (content.match(valg) || name.match(valg)) {
+					const template = `
+					<div class="card">
+					<div class="head d-flex  align-items-center">
+						<div class="avatar">
+							<img src="./src/images/gremilin.jpg" alt="">
+						</div>
+						<div class="command">
+							<span>${command.name}</span>
+						</div>
+				
+					</div>
+					<div class="content">
+						<p>${command.content}</p>
+					</div>
+				</div>
+					`
+					$('#commands-container').append(template)
+				}
+			})
+		}
 	}, 1000)
 }
 function setAllCards() {

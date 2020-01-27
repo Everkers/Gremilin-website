@@ -7,6 +7,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button.button {
   background-color: #38dcd1;
   color: #fff;
@@ -35,6 +39,10 @@ nav #navbarSupportedContent div ul li {
 }
 nav #navbarSupportedContent div ul li button {
   margin-top: -2em;
+}
+nav #navbarSupportedContent div ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 nav #navbarSupportedContent div ul li:hover {
   color: #fff;
@@ -102,7 +110,7 @@ nav #navbarSupportedContent div ul li:hover {
   margin-right: 3.5em;
   margin-bottom: 3.5em;
   background-color: #212123;
-  width: 20em;
+  width: 28em;
   height: 13em;
   color: #fff;
 }
@@ -197,7 +205,15 @@ nav #navbarSupportedContent div ul li:hover {
 .footer .container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
   height: 100%;
+}
+@media screen and (max-width: 511px) {
+  .footer .container div:last-child {
+    margin: 0 !important;
+  }
 }
 .footer .container div:last-child span:first-child {
   font-weight: 600;
